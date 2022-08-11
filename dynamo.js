@@ -12,7 +12,7 @@ const getSGItem = async (id) =>
 {
 const params = 
 	{
-	TableName: "TableName",
+	TableName: "sg_item_indexes",
 	Key: {id}
 	}
 	const sgItem = await dynamoClient.scan(params).promise();
